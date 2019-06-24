@@ -1197,7 +1197,7 @@ AVCodec ff_mpeg1video_encoder = {
 };
 
 AVCodec ff_mpeg2video_encoder = {
-    .name                 = "mpeg2video",
+    .name                 = "XDCAM422",
     .long_name            = NULL_IF_CONFIG_SMALL("MPEG-2 video"),
     .type                 = AVMEDIA_TYPE_VIDEO,
     .id                   = AV_CODEC_ID_MPEG2VIDEO,
