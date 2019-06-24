@@ -41,8 +41,8 @@ static const AVCodecDescriptor codec_descriptors[] = {
     {
         .id        = AV_CODEC_ID_MPEG2VIDEO,
         .type      = AVMEDIA_TYPE_VIDEO,
-        .name      = "XDCAM422",
-        .long_name = NULL_IF_CONFIG_SMALL("XDCAM422"),
+        .name      = "XDCAM HD422 1080i60 (50 Mb/s)",
+        .long_name = NULL_IF_CONFIG_SMALL("XDCAM HD422 1080i60 (50 Mb/s)"),
         .props     = AV_CODEC_PROP_LOSSY | AV_CODEC_PROP_REORDER,
         .profiles  = NULL_IF_CONFIG_SMALL(ff_mpeg2_video_profiles),
     },
