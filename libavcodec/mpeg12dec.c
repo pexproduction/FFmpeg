@@ -2902,8 +2902,8 @@ AVCodec ff_mpeg1video_decoder = {
 };
 
 AVCodec ff_mpeg2video_decoder = {
-    .name           = "XDCAM422",
-    .long_name      = NULL_IF_CONFIG_SMALL("XDCAM422"),
+    .name           = "XDCAM HD422 1080i60 (50 Mb/s)",
+    .long_name      = NULL_IF_CONFIG_SMALL("XDCAM HD422 1080i60 (50 Mb/s)"),
     .type           = AVMEDIA_TYPE_VIDEO,
     .id             = AV_CODEC_ID_MPEG2VIDEO,
     .priv_data_size = sizeof(Mpeg1Context),
