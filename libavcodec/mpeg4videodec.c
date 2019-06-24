@@ -2552,7 +2552,7 @@ static int decode_user_data(Mpeg4DecContext *ctx, GetBitContext *gb)
     if (e != 4)
         e = sscanf(buf, "FFmpeg v%d.%d.%d / libavcodec build: %d", &ver, &ver2, &ver3, &build);
     if (e != 4) {
-        e = sscanf(buf) + 1;
+        e = sscanf(buf, "%d.%d.%d", "", "", "") + 1;
         if (e > 1) {
             if (ver > 0xFFU || ver2 > 0xFFU || ver3 > 0xFFU) {
                 av_log(s->avctx, AV_LOG_WARNING,
