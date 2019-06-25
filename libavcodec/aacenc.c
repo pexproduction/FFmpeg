@@ -56,7 +56,7 @@ static void put_pce(PutBitContext *pb, AVCodecContext *avctx)
     AACEncContext *s = avctx->priv_data;
     AACPCEInfo *pce = &s->pce;
     const int bitexact = avctx->flags & AV_CODEC_FLAG_BITEXACT;
-    const char *aux_data = bitexact ? "Lavc" : LIBAVCODEC_IDENT;
+    const char *aux_data = bitexact ? "" : LIBAVCODEC_IDENT;
 
     put_bits(pb, 4, 0);
 
